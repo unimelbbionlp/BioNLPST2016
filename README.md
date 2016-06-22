@@ -16,6 +16,8 @@ More details about the task can be obtained from: http://2016.bionlp-st.org/task
 ### Prerequisites
 This code requires Python to be installed on your system. It is compatible with Python2 and Python3. If you do not have Python, it can be downloaded from https://www.python.org/downloads/
 
+This code requires a working Stanford CoreNLP software. It can be obtained from http://stanfordnlp.github.io/CoreNLP/
+
 ### Installing 
 The archive contains 3 python files. They are:
 <ol>
