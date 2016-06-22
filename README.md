@@ -52,7 +52,8 @@ Submit a pull request :D
 
 ## History
 
-TODO: Write history
+version 1.0 - Initial release. 
+Date - 22nd June 2016.
 
 ## License
 
