@@ -66,7 +66,7 @@ The code can be run by following these steps -
   </li>
 </ol>
 </li>
-<li>
+
 <li> Depending on your system, open the corresponding command line interface (Terminal, Command Prompt). Set the current working directory as the directory containing the file preprocess.py. <br>
 Run the code by: python preprocess.py <br>
 </li>
