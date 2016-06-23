@@ -1,7 +1,7 @@
 # BioNLP2016 - SeeDev Task
 University of Melbourne's SeeDev binary event extraction system for BioNLP-Shared Task 2016.
 
-Authors: Nagesh PC, Gitansh Khirbat <br>
+Authors: P.C Nagesh, Gitansh Khirbat <br>
 Date: 20th June 2016 <br>
 Project: SeeDev binary event extraction of BioNLP-Shared Task 2016.<br>
 Paper: {Link goes here when the paper is up on ACL-web}
@@ -42,7 +42,8 @@ SOFTWARE.
 ### Prerequisites
 This code requires Python to be installed on your system. It is compatible with Python2 and Python3. If you do not have Python, it can be downloaded from https://www.python.org/downloads/
 
-This code requires a working Stanford CoreNLP software. It can be obtained from http://stanfordnlp.github.io/CoreNLP/
+### External Software
+This system assumes parses for input text are available. Constituency and Dependency parsing can be generated with Stanford CoreNLP software. It can be obtained from http://stanfordnlp.github.io/CoreNLP/
 
 ### Installing 
 The archive contains 3 python files. They are:
@@ -87,7 +88,7 @@ Date - 22nd June 2016.
 
 For questions about this distribution, bug reports and fixes, please contact:
 
-Nagesh PC, Gitansh Khirbat <br>
+P.C. Nagesh, Gitansh Khirbat <br>
 Department of Computing and Information Systems <br>
 The University of Melbourne, Australia <br>
 {npanyam, gkhirbat}@student.unimelb.edu.au
