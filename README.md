@@ -80,13 +80,14 @@ Submit a pull request :D
 
 ## History
 
-version 1.0 - Initial release. 
+version 1.0 - Initial release.  <br>
 Date - 22nd June 2016.
 
 ## Contact
 
 For questions about this distribution, bug reports and fixes, please contact:
-Nagesh PC, Gitansh Khirbat
-Department of Computing and Information Systems
-The University of Melbourne, Australia
+
+Nagesh PC, Gitansh Khirbat <br>
+Department of Computing and Information Systems <br>
+The University of Melbourne, Australia <br>
 {npanyam, gkhirbat}@student.unimelb.edu.au
