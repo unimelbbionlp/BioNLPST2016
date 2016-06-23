@@ -200,4 +200,3 @@ def get_doc_obj(e1,e2):
 		__entity_to_doc_map[e1.documentId] =  obj
 
 	return __entity_to_doc_map[e1.documentId]
-
