@@ -7,9 +7,7 @@ import operator
 ##################
 from  corenlpparse import coreNLP
 from  corenlpparse import clsEntity
-from  corenlpparse import graphKernel
 from  corenlpparse import get_doc_obj
-import sdpKernel 
 
 
 ####################################################
@@ -527,44 +525,6 @@ def custom_linear_kernel(e1, e2, e3, e4, features1, features2):
 #globals for custom kernel use
 custom_data_points = []
 ###
-def custom_kernel(X, Y ):
-	global custom_data_points
-
-	retmat = np.zeros(  (len(X), len(Y)) ) 
-	for i in range(len(X)):
-		for j in range( len(Y) ) : 
-			#test linear kernel
-			#X[i] is the ith data point, but we use its 0th feature as pointer into custom_data_points to get the original data
-			#try :
-				e1A, e2A, labelA, featureA =  custom_data_points[ int(X[i][0]) ] 
-				e1B, e2B, labelB, featureB =  custom_data_points[ int(Y[j][0]) ] 
-				obj1 = get_doc_obj(e1A, e2A)
-				obj2 = get_doc_obj(e1B, e2B)
-
-
-				sim = sdpKernel.SPDK(e1A, e2A, obj1, e1B, e2B, obj2)
-				#sim =  custom_linear_kernel(e1A, e2A, e1B, e2B, featureA, featureB)
-				#sim =  graphKernel(e1A, e2A, e1B, e2B)
-				#print "linear and graph sims" , linear_sim, graph_sim
-				#print "custom_kernel_computation_for", e1A.get_display(), e2A.get_display(), e1B.get_display(), e2B.get_display() ,sim
-				retmat[i,j] =  sim
-#			except:
-#				print >>sys.stderr, "extracting features for ", i, j 
-#				print  >>sys.stderr, "X of i ", X[i]
-#				print >>sys.stderr, "Y of j ", Y[j]
-#
-#				print >>sys.stderr, "failing in custom kernel", i, j , " of " , len(X), len(Y) 
-#				print >>sys.stderr, " whose contents are ", X[i], Y[j]
-#				print >>sys.stderr, "working out the similarity for ", \
-#					e1A.get_display(), e2A.get_display(), labelA, featureA, e1B.get_display(), e2B.get_display(),labelB, featureB
-#				sys.exit(-1)
-		if  int(i*100.0/ len(X) )+1 % 10 == 0 : 	
-			print >>sys.stderr, "custom_kernel computation progress ",  i*100.0/len(X) , "%"
-		### for j
-	### for i
-	return retmat
-
-
 ############
 def scikit_classifier(train_file, test_file, relation_type, method="naive_bayes") :
 	global train_gold_relations, test_gold_relations 
