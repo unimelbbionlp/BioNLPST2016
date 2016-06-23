@@ -56,11 +56,19 @@ The archive contains 3 python files. They are:
 ### Using the code 
 The code can be run by following these steps -
 <ol>
-<li> Load Data - Create a sub-directory "data" within the directory of this code.
+<li> Prepare Data - Create a sub-directory "./data" within the directory of this code.
 <ol>
-  <li> Store the training data in a sub-directory named "training_data" within this directory like this: "/data/train_data/" </li>
-  <li> Store the test data in a sub-directory named "test_data" within this directory like this: "/data/test_data/" </li>
+  <li> Get SeeDev binary data from http://2016.bionlp-st.org/tasks/seedev - Three zip files would be obtained which are: BioNLP-ST-2016_SeeDev-binary_dev, BioNLP-ST-2016_SeeDev-binary_train and BioNLP-ST-2016_SeeDev-binary_test.
+  </li>
+  <li> Unzip these three files in the "./data" directory to get the files of the form "./data/BioNLP-ST-2016_SeeDev-binary_dev", "./data/BioNLP-ST-2016_SeeDev-binary_train" and "./data/BioNLP-ST-2016_SeeDev-binary_test".
+  </li>
+  <li> Run the Stanford CoreNLP to get dependency parsing on each "./*.txt" file present in the above three directories and store their output (parses) in "*.txt.out" format.
+  </li>
 </ol>
+</li>
+<li>
+<li> Depending on your system, open the corresponding command line interface (Terminal, Command Prompt). Set the current working directory as the directory containing the file preprocess.py. <br>
+Run the code by: python preprocess.py <br>
 </li>
 <li> Depending on your system, open the corresponding command line interface (Terminal, Command Prompt). Set the current working directory as the directory containing the file classifier.py. <br>
 Run the code by: python classifier.py <br>
@@ -69,20 +77,6 @@ Run the code by: python classifier.py <br>
 The code will produce classifier result (Precision, Recall and F-Score) in the command line interface for each relation, followed by the overall results.
 </li>
 </ol>
-
-
-## Contributing
-
-Fork it!<br>
-Create your feature branch: git checkout -b my-new-feature <br>
-Commit your changes: git commit -am 'Add some feature' <br>
-Push to the branch: git push origin my-new-feature <br>
-Submit a pull request :D 
-
-## History
-
-version 1.0 - Initial release.  <br>
-Date - 22nd June 2016.
 
 ## Contact
 
