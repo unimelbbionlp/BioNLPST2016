@@ -51,6 +51,7 @@ The archive contains 3 python files. They are:
 <li> classifier.py - Contains main() function, classifier and feature information </li>
 <li> preprocess.py - Code to preprocess data using corenlpparse.py and produces data points (entity pairs). </li>
 <li> corenlpparse.py - Contains methods to read data from files using Stanford's CoreNLP. </li>
+<li> prepare_examples.sh  - this will run preprocess on all Seedev documents and prepare examples for classification. </li>
 </ol>
 
 ### Using the code 
