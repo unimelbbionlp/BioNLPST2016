@@ -163,4 +163,4 @@ if __name__ == "__main__":
 	#produce_data_points( documentId ) #docmentId is SeeDev-binary-10662856-1.txt  #pmid-passageid
 
 	documentId = sys.argv[1]
-	produce_data_points( documentId , outdir="/tmp/" ) #docmentId is SeeDev-binary-10662856-1.txt  #pmid-passageid
+	produce_data_points( documentId , outdir=sys.argv[2] ) #docmentId is SeeDev-binary-10662856-1.txt  #pmid-passageid

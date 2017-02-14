@@ -63,14 +63,15 @@ The code can be run by following these steps -
   <li> Unzip these three files in the "./data" directory to get the files of the form "./data/BioNLP-ST-2016_SeeDev-binary_dev", "./data/BioNLP-ST-2016_SeeDev-binary_train" and "./data/BioNLP-ST-2016_SeeDev-binary_test".
   </li>
   <li> Run the Stanford CoreNLP to get dependency parsing on each "./*.txt" file present in the above three directories and store their output (parses) in "*.txt.out" format.
+  	If Stanford CoreNLP is installed in your system, you can do "java -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,parse,ner,dcoref -file SeeDev-binary-11489176-1.txt  -outputDirectory  ./" to get  SeeDev-binary-11489176-1.txt.out.
+	Do this for all *.txt files ( for i in *.txt; do  java -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,parse,ner,dcoref -file $i  -outputDirectory  ./ ; done	
   </li>
 </ol>
 </li>
 
-<li> Depending on your system, open the corresponding command line interface (Terminal, Command Prompt). Set the current working directory as the directory containing the file preprocess.py. <br>
-Run the code by: python preprocess.py <br>
+<li> Assuming linux like system, (modify suitably otherwise) run the following script: <br>  bash prepare_examples.sh  <br>
 </li>
-<li> Depending on your system, open the corresponding command line interface (Terminal, Command Prompt). Set the current working directory as the directory containing the file classifier.py. <br>
+<li> Run the classification , the main code <br>
 Run the code by: python classifier.py <br>
 </li>
 <li>
@@ -82,7 +83,7 @@ The code will produce classifier result (Precision, Recall and F-Score) in the c
 
 For questions about this distribution, bug reports and fixes, please contact:
 
-P.C. Nagesh, Gitansh Khirbat <br>
+Nagesh C. Panyam, Gitansh Khirbat <br>
 Department of Computing and Information Systems <br>
 The University of Melbourne, Australia <br>
 {npanyam, gkhirbat}@student.unimelb.edu.au
