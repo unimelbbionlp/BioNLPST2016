@@ -4,7 +4,18 @@ University of Melbourne's SeeDev binary event extraction system for BioNLP-Share
 Authors: P.C. Nagesh, Gitansh Khirbat <br>
 Date: 20th June 2016 <br>
 Project: SeeDev binary event extraction of BioNLP-Shared Task 2016.<br>
-Paper: {Link goes here when the paper is up on ACL-web}
+Paper: { <br>
+		@inproceedings{panyam2016seedev, <br>
+	        title={SeeDev Binary Event Extraction using SVMs and a Rich Feature Set}, <br>
+	        author={Panyam, Nagesh C. and Khirbat, Gitansh and Verspoor, Karin and Cohn, Trevor and Ramamohanarao, Kotagiri}, <br>
+      		booktitle={Proceedings of the 4th BioNLP Shared Task Workshop, ACL 2016}, <br>
+        	pages={82},	<br>
+	  	year={2016}, <br>
+      }
+
+PDF: { <br>
+https://www.aclweb.org/anthology/W/W16/W16-30.pdf#page=92 <br>
+}
 
 
 ## PROJECT INFORMATION
